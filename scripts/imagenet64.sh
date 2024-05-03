@@ -1,0 +1,1 @@
+python train.py --name imagenet-uniform-recip-precond-bs512-varv1-varx1-k0.2-p3-lr1e3-ADM-newlabel-probode --varv 1 --varx 1 --k 0.2 --p 3 --microbatch 64 --n-gpu-per-node 8 --lr 1e-3 --exp imagenet64 --t-samp uniform --precond --reweight-type reciprocal --probablistic-ode --sampling vanillaODE

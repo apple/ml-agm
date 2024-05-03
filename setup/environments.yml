@@ -1,0 +1,36 @@
+#
+# For licensing see accompanying LICENSE file.
+# Copyright (C) 2024 Apple Inc. All Rights Reserved.
+#
+name: agm
+channels:
+  # - pytorch
+  - nvidia
+dependencies:
+  - python>=3.8, < 3.10  # package build failures on 3.10
+  - pip
+  - numpy>=1.20
+  - click>=8.0
+  - pillow>=8.3.1
+  - scipy>=1.7.1
+  - psutil
+  - requests
+  - tqdm
+  - imageio
+  - matplotlib
+  - scikit-learn
+  - pip:
+    - imageio-ffmpeg>=0.4.3
+    - pyspng
+    - easydict
+    - ipdb
+    # - torch_ema
+    - prefetch_generator
+    - wandb
+    - termcolor
+    - rich
+    # - pytorch_warmup
+    - colored_traceback
+    - ml_collections
+    - gdown
+    
